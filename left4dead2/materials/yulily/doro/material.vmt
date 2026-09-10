@@ -1,0 +1,24 @@
+patch
+{
+	include	"materials\yulily\doro\base.vmt"
+	insert
+	{
+		//"$envmap"			"env_cubemap"
+	    //"$envmaptint" 			"[.05 .05 .05 ]"
+		// "$envmapfresnel"				"1"
+		"$lightwarptexture" "yulily\doro\basewarp"
+
+		"$emissiveblendenabled"			"1"
+		"$emissiveblendstrength"		"0.01"
+		"$emissiveblendtexture"			"vgui/white"
+		"$emissiveblendflowtexture"		"vgui/white"
+		"$emissiveblendftint"			"[1 1 1]"
+		"$emissiveblendscrollvector"	"[0 0]"
+		"$emissiveblendbasetexture"		"yulily\doro\tex\body"
+	}
+	replace
+	{
+		"$basetexture" 					"yulily\doro\tex\body"
+		"$nocull" 						"1"
+	}
+}
